@@ -7,6 +7,12 @@
   <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital@0;1&display=swap"
+    rel="stylesheet">
 
   <title>Frontend Mentor | Easybank landing page</title>
 
@@ -30,7 +36,7 @@
       <div class="logo">
         <img src="./images/logo.svg" alt="Easybank logo">
       </div>
-      <nav class="site-nav">
+      <nav class="hide">
         <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#">About</a></li>
@@ -38,15 +44,18 @@
           <li><a href="#">Blog</a></li>
           <li><a href="#">Careers</a></li>
         </ul>
+        <button class="btn">Request Invite</button>
       </nav>
-      <button class="btn">Request Invite</button>
+      <div class="hamburger">
+        <img src="./images/icon-hamburger.svg" alt="Hamburger icon">
+      </div>
     </div>
   </header>
   <main>
     <!-- Hero Section Start -->
     <section id="hero">
       <figure>
-        <img src="./images/image-mockups.png" alt="Easybank mockups">
+        <img src="./images/image-mockups.png" alt="Easybank mockups" width="300">
       </figure>
       <div class="content">
         <h1>Next generation digital banking</h1>
@@ -204,6 +213,14 @@
       </div>
     </div>
   </footer>
+
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const nav = document.querySelector('nav');
+    hamburger.addEventListener('click', () => {
+      nav.classList.toggle('show');
+    })
+  </script>
 </body>
 
 </html>
