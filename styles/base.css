@@ -39,6 +39,7 @@ h6 {
   font-family: 'Open Sans', sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
+  color: var(--heading-color);
 }
 
 .btn {
@@ -93,4 +94,14 @@ h6 {
   html {
     font-size: 62.5%;
   }
+}
+
+@media screen and (min-width: 1300px) {
+  html {
+    font-size: 68.75%;
+  }
+}
+
+#articles img {
+  width: 200px;
 }
