@@ -1,0 +1,66 @@
+#features {
+  /* to make the section  like the shape in the design, we need to move it up */
+  position: relative;
+  z-index: -2;
+  padding: 10rem 0;
+  background-color: var(--section-background);
+}
+
+#features .heading {
+  margin-bottom: 5rem;
+  max-width: 60rem;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#features .heading h2 {
+  margin-bottom: 1rem;
+  font-size: 4rem;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 4rem;
+}
+
+.feature {
+  text-align: center;
+}
+
+.feature figure {
+  margin-bottom: 2rem;
+}
+
+.feature h3 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+@media screen and (min-width: 600px) {
+  .features {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 900px) {
+  #features {
+    margin-top: -10rem;
+  }
+
+  #features .heading {
+    text-align: left;
+    margin-left: 0;
+    margin-right: auto;
+  }
+
+  .features {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .feature {
+    text-align: left;
+  }
+}
