@@ -43,6 +43,10 @@
   .features {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  #features .heading h2 {
+    text-align: left;
+  }
 }
 
 @media screen and (min-width: 900px) {
